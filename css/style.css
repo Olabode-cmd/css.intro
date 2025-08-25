@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* General Styling */
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Container Styling */
+.container {
+    background-color: #eee;
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px 10px;
+}
+
+.box-container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    width: 950px;
+    margin: 0 auto;
+
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Box styling */
+.box {
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.box img {
+    width: 40%;
+}
+
+.box.pink {
+    background: rgb(246, 230, 232);
+}
+.box.orange {
+    background: rgb(240, 231, 212);
+}
+.box.yellow {
+    background: rgb(240, 239, 212);
+}
+.box.blue {
+    background: rgb(212, 218, 240);
+}
+.box.indigo {
+    background: rgb(229, 203, 240);
+}
+.box.green {
+    background: rgb(217, 240, 212);
+}
+
+.box h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.box p {
+    font-size: 15px;
+}
+
+.box.col-2 {
+    display: flex;
+    align-items: center;
+}
+
+.box.col-2 div {
+    flex: 1;
+}
+.box.col-2 div img {
+    width: 60%;
+    margin-left: auto;
+}
+.box.col-2 .text-right {
+    text-align: right;
+}
+
+.box.box-1 img {
+    height: 230px;
+    width: 100%;
+}
