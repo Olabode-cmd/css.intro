@@ -109,3 +109,75 @@ img {
     height: 230px;
     width: 100%;
 }
+
+/* Keyframes */
+.anim-box {
+    /* padding: 15px; */
+    background: purple;
+    color: white;
+    width: 200px;
+    height: 200px;
+
+    transition: 2s;
+
+    /* transform: scale(1.5) */
+
+    animation: changeBg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+}
+
+/* :hover pseudoclass */
+.anim-box:hover {
+    background: orange;
+    padding: 20px;
+    width: 230px;
+    height: 230px;
+}
+
+@keyframes changeBg {
+    0% {
+        background: purple;
+        transform: translateX(0);
+        border-radius: 0px;
+        padding: 15px;
+    }
+    50% {
+        background: green;
+        transform: translateX(200px);
+        border-radius: 50%;
+        padding: 35px;
+    }
+    100% {
+        background: orange;
+        transform: translateX(0);
+        border-radius: 0px;
+        padding: 15px;
+    }
+}
+
+/* 
+@keyframes changeBg {
+    0% {
+        background: purple;
+    }
+    50% {
+        background: green;
+    }
+    100% {
+        background: orange;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(300px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+} */
