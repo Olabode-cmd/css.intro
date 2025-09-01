@@ -7,7 +7,7 @@
 </head>
 <body>
     <style>
-        .container {
+        /* .container {
             display: flex;
             gap: 10px;
             justify-content: space-evenly;
@@ -17,13 +17,46 @@
             width: 100px;
             height: 100px;
             background: purple
+        } */
+
+        .box {
+            /* width: 100px; */
+            /* height: 100px; */
+            padding: 15px;
+            background: purple;
+        }
+
+        .longbox {
+            height: 300px;
+            flex: 1;
+        }
+        .long {
+            height: 150px;
+            flex: 2;
+        }
+        .container {
+            display: flex;
+            gap: 10px; /* this dictates how much space is between each of the flex elements in the container */
+
+            justify-content: space-evenly;
+            /* this dictates how the elements lay themselves out on a horizontal axis */
+            /* and we have a few options: flex-start, center, flex-end, space-between, space-around, space-evenly */
+
+            /* align-items: ; */
+            /* this dictates how the elements are aligned on a vertical axis with respect to the container's height or */
+            /* the height of the tallest element in the container */
+
+            /* options: stretch, flex-start, center, flex-end. by default, this is stretch */
+            align-items: center;
         }
     </style>
+
+    <h1>Flex Class</h1>
     <div class="container">
         <div class="box">box</div>
+        <div class="box longbox">box</div>
         <div class="box">box</div>
-        <div class="box">box</div>
-        <div class="box">box</div>
+        <div class="box long">box</div>
         <div class="box">box</div>
         <div class="box">box</div>
     </div>
