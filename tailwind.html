@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind First Trial Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    </style>
+    <!-- <h1 class="text-red-600 text-center text-4xl font-bold">Hello world</h1> -->
+     <!-- 100vh = h-screen, 100% = h-full, 1000px = h=[1000px] -->
+    <div class="w-full h-screen bg-[#0D2A45] py-8 px-2">
+        <img src="assets/paystack.svg" alt="logo" class="w-[130px] mx-auto mb-8" />
+
+        <div class="login-box bg-white px-10 py-6 rounded-md w-[500px] mx-auto">
+            <h3 class="text-center text-gray-600 text-base uppercase mb-6">log into your account</h3>
+
+            <form class="space-y-3">
+                <input 
+                    type="email"
+                    placeholder="Email address"
+                    id="email"
+                    class="block w-full p-3 border border-gray-300 rounded-md text-sm"
+                />
+
+                <input 
+                    type="password"
+                    placeholder="Password" 
+                    id="password" 
+                    class="block w-full p-3 border border-gray-300 rounded-md text-sm"
+                />
+                <button class="w-full p-3 text-white bg-[#6CC986] hover:bg-red-500 duration-300 cursor-pointer rounded-md">log in</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
