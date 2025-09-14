@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Landing Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+
+    <!-- 
+    section
+    header
+    nav
+    main
+    footer
+    -->
+
+    <!-- 
+        header
+
+        main
+
+        footer
+    
+    -->
+
+    <header class="fixed top-0 left-0 w-full">
+      <!-- Banner -->
+      <div class="bg-green-900 text-white">
+        <div
+          class="flex items-center justify-between py-2.5 px-2 max-w-7xl mx-auto"
+        >
+          <div>
+            <p>+234 189 2322 232</p>
+          </div>
+          <div class="flex gap-1">
+            <p>Get 50% off all items |</p>
+            <a href="#" class="hover:text-green-300 cursor-pointer duration-150"
+              >Shop now</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <select>
+              <option value="eng">Eng</option>
+              <option value="fra">Fra</option>
+              <option value="spa">Spa</option>
+              <option value="ger">Ger</option>
+            </select>
+
+            <select>
+              <option value="0" disabled selected>Location</option>
+              <option value="ng">NG</option>
+              <option value="us">US</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="bg-white w-full">
+        <div
+          class="max-w-7xl mx-auto flex items-center justify-between py-2 px-2"
+        >
+          <div>
+            <h3 class="text-lg font-semibold text-green-800">Shopcart</h3>
+          </div>
+          <div class="flex items-center">
+            <div class="mr-12 flex gap-x-3">
+              <a href="#">Categories</a>
+              <a href="#">Deals</a>
+              <a href="#">What's new</a>
+              <a href="#">Deliveries</a>
+            </div>
+
+            <div class="relative">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="bg-gray-200 p-2 rounded-full w-full text-sm"
+              />
+            </div>
+          </div>
+          <div class="flex gap-x-3">
+            <a href="#">Account</a>
+            <a href="#">Cart</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="section-hero pt-32 max-w-7xl mx-auto px-2">
+        <div
+          class="w-full grid grid-cols-2 gap-6 bg-orange-100 pt-6 rounded-sm"
+        >
+          <div class="pl-8 pt-8">
+            <h1 class="text-5xl mb-6 font-semibold">
+              Grab Up To 50% Off On Selected Headphones
+            </h1>
+            <button
+              class="px-3 py-2.5 rounded-full text-white bg-green-900 hover:bg-green-600"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div>
+            <img
+              src="assets/model-nobg.png"
+              alt="no background model"
+              class="w-[250px]"
+            />
+          </div>
+        </div>
+
+        <!-- Selects section -->
+        <div class="mt-8 flex gap-3 items-center">
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="eng">Eng</option>
+            <option value="fra">Fra</option>
+            <option value="spa">Spa</option>
+            <option value="ger">Ger</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="0" disabled selected>Location</option>
+            <option value="ng">NG</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="0" disabled selected>Location</option>
+            <option value="ng">NG</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="eng">Eng</option>
+            <option value="fra">Fra</option>
+            <option value="spa">Spa</option>
+            <option value="ger">Ger</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="0" disabled selected>Location</option>
+            <option value="ng">NG</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="eng">Eng</option>
+            <option value="fra">Fra</option>
+            <option value="spa">Spa</option>
+            <option value="ger">Ger</option>
+          </select>
+
+          <select class="bg-gray-100 p-2 text-sm rounded-full pr-4">
+            <option value="0" disabled selected>Location</option>
+            <option value="ng">NG</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+
+          <select class="border border-gray-300 p-2 text-sm rounded-full pr-4 ml-auto">
+            <option value="0" disabled selected>Sort by</option>
+            <option value="ng">NG</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="section-headphones py-16 max-w-7xl mx-auto px-2">
+        <h1 class="text-xl font-bold">Headphones for you!</h1>
+
+        <div class="grid grid-cols-4 gap-4 mt-12">
+            <!-- Product component card -->
+
+            <div class="relative">
+                <img src="assets/perfume.jpg" alt="product" class="w-full h-[280px] object-cover mb-2" />
+                <div class="flex items-center justify-between">
+                    <h1 class="font-bold text-base">North Chanel, 2015</h1>
+                    <p class="text-base">$590</p>
+                </div>
+
+                <p class="text-sm my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequuntur aliquid voluptatum.</p>
+                <button class="rounded-full px-2.5 cursor-pointer py-1.5 text-sm border border-green-900 text-green-900 hover:bg-green-900 hover:text-white duration-150">Add to cart</button>
+            </div>
+
+            <div class="relative">
+                <img src="assets/perfume.jpg" alt="product" class="w-full h-[280px] object-cover mb-2" />
+                <div class="flex items-center justify-between">
+                    <h1 class="font-bold text-base">North Chanel, 2015</h1>
+                    <p class="text-base">$590</p>
+                </div>
+
+                <p class="text-sm my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequuntur aliquid voluptatum.</p>
+                <button class="rounded-full px-2.5 cursor-pointer py-1.5 text-sm border border-green-900 text-green-900 hover:bg-green-900 hover:text-white duration-150">Add to cart</button>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
