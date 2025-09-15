@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    </style>
+    <h1>Image section redo</h1>
+/
+    <section class="image-section">
+        <div class="grid grid-cols-5 gap-3 max-w-7xl mx-auto">
+            <div class="relative rounded-2xl overflow-hidden">
+                <img src="/assets/image1.jpg" class="h-[300px] w-full object-cover hover:scale-[1.2] duration-200" /> <!-- object-fit: cover-->
+            </div>
+            <div class="relative col-span-2 rounded-2xl overflow-hidden">
+                <img src="/assets/image2.jpg"  class="h-[300px] w-full object-cover rounded-2xl hover:scale-[1.2] duration-200"/>
+
+                <div class="bg-white text-black px-1 py-[1.5px] rounded-full inline-block absolute top-2 left-2">
+                    <i class="fa-solid fa-minus text-sm"></i>
+                </div>
+                
+                <div class="bg-black/70 text-white px-1 py-[1.5px] hover:scale-[1.1] duration-150 cursor-pointer rounded-full inline-block absolute top-2 right-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+                
+
+                <button class="flex items-center gap-x-3 bg-green-700 text-white px-3 py-2 rounded-full text-sm hover:bg-green-800 cursor-pointer absolute bottom-2 right-2">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Tutorials</span>
+                </button>
+
+                <div class="text-xs text-white w-1/2 absolute bottom-2 left-2">
+                    <h3>How to use</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="/assets/image3.jpg"  class="h-[300px] w-full object-cover rounded-2xl"/>
+            </div>
+            <div class="relative">
+                <img src="/assets/image4.jpg"  class="h-[300px] w-full object-cover rounded-2xl"/>
+            </div>
+            <div class="relative col-span-2">
+                <img src="/assets/image5.jpg"  class="h-[300px] w-full object-cover rounded-2xl"/>
+            </div>
+            <div class="relative">
+                <img src="/assets/perfume.jpg"  class="h-[300px] w-full object-cover rounded-2xl"/>
+            </div>
+            <div class="relative col-span-2">
+                <img src="/assets/model.jpg"  class="h-[300px] w-full object-cover rounded-2xl"/>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
